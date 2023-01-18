@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Route, Switch } from "react-router-dom";
+import {Routes, Route } from "react-router-dom";
 import NavBar from "./NavBar";
-import MoviesPage from "./MoviesPage";
+import MoviesPage from "../components/MoviesPage";
 
 function App() {
   const [movies, setMovies] = useState({
@@ -10,17 +10,18 @@ function App() {
     3: { id: 3, title: "Inception" },
   });
 
+  console.log(movies)
   return (
     <div>
       <NavBar />
-      <Switch>
+      <Routes>
         <Route path="/movies">
           <MoviesPage movies={movies} />
         </Route>
         <Route exact path="/">
           <div>Home</div>
         </Route>
-      </Switch>
+      </Routes>
     </div>
   );
 }

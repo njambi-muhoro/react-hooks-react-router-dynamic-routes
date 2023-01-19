@@ -8,8 +8,7 @@
     "react-scripts": "4.0.1"
   },
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts --openssl-legacy-provider build"
+    "start": "react-scripts start"
   },
   "eslintConfig": {
     "extends": [
@@ -29,6 +28,6 @@
     ]
   },
   "devDependencies": {
-    "react-router-dom": "^6.6.2"
+    "react-router-dom": "^5.0.0"
   }
 }
